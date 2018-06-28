@@ -46,4 +46,12 @@ app.get('/bad',(req,res)=>{
     res.send('error messsage')
 })
 
+app.get('/project',(req,res)=>{
+    "use strict";
+    res.render('project.hbs',{
+        pageTitle:'Project',
+        text:"this is my project"
+    })
+})
+
 app.listen(port,()=>console.log(`server started at port : ${port}`))
